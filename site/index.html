@@ -7,14 +7,7 @@
   <meta name="description" content="Honest comparisons, reviews and guides on AI tools for work. Find the best AI tool for your profession — tested, not sponsored.">
   <meta name="google-site-verification" content="dDZGJ3B_L8Ycu86YVrxz6pEBPG9YB5Offh2qjtCNjHA" />
   <link rel="stylesheet" href="css/style.css">
-  <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8301EM44J"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-N8301EM44J');
-  </script>
+  <script src="js/consent.js" defer></script>
 </head>
 <body>
   <header class="site-header">
@@ -82,6 +75,13 @@
   <footer class="site-footer">
     <div class="container">
       <p>&copy; 2026 AI for Work HQ. Independent, tested, honest.</p>
+      <p class="footer-links">
+        <a href="/#about">About</a> ·
+        <a href="/privacy">Privacy</a> ·
+        <a href="/affiliate-disclosure">Affiliate disclosure</a> ·
+        <a href="/contact">Contact</a> ·
+        <a href="#" onclick="window.affhqConsent &amp;&amp; window.affhqConsent(); return false;">Cookie settings</a>
+      </p>
     </div>
   </footer>
 </body>

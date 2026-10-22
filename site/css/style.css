@@ -118,6 +118,9 @@ section.narrow p { color: var(--muted); }
   color: var(--muted);
   font-size: .88rem;
 }
+.footer-links { margin-top: 8px; }
+.footer-links a { color: var(--muted); text-decoration: none; }
+.footer-links a:hover { color: var(--accent); }
 
 /* Article pages */
 .article { padding-top: 36px; }
@@ -162,6 +165,8 @@ section.narrow p { color: var(--muted); }
 .article tr:nth-child(even) td { background: #fbfbfe; }
 
 .note { font-size: .86rem; color: var(--muted); }
+.contact-email { font-size: 1.25rem; margin: 18px 0 26px; }
+.contact-email strong { color: var(--accent); }
 
 .cta {
   background: var(--card);
@@ -179,3 +184,34 @@ section.narrow p { color: var(--muted); }
 .disclosure { font-size: .82rem; color: var(--muted); border-top: 1px solid var(--border); padding-top: 16px; margin-top: 36px; }
 .back { margin-top: 22px; }
 .back a { text-decoration: none; }
+
+/* Cookie banner */
+#cookie-banner {
+  position: fixed;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  max-width: 560px;
+  margin: 0 auto;
+  background: #1a1a2e;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  font-size: .9rem;
+  box-shadow: 0 12px 40px rgba(0,0,0,.28);
+  z-index: 100;
+}
+#cookie-banner p { margin: 0 0 12px; }
+#cookie-banner a { color: #b9bdff; }
+.cookie-actions { display: flex; gap: 10px; justify-content: flex-end; }
+.cookie-actions button {
+  border: 1px solid #55557a;
+  background: transparent;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: .88rem;
+  cursor: pointer;
+}
+.cookie-actions #cookie-accept { background: var(--accent); border-color: var(--accent); font-weight: 600; }
+.cookie-actions button:hover { opacity: .85; }
