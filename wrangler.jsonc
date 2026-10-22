@@ -2,6 +2,11 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "aiforworkhq",
   "compatibility_date": "2026-10-22",
+  "routes": [
+    { "pattern": "aiforworkhq.com", "custom_domain": true },
+    { "pattern": "www.aiforworkhq.com", "custom_domain": true }
+  ],
+  "workers_dev": true,
   "assets": {
     "directory": "./site"
   }
